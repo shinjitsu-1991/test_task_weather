@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+.weather-app {
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  height: 100%;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  &__input-wrap {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto 10px;
+    input {
+      padding: 10px;
+      box-sizing: border-box;
+      height: 40px;
+      min-width: 300px;
+      margin-right: 5px;
+      border-radius: 20px;
+      border: none;
+      background-color: rgba(0,0,0,.1);
+    }
+    button {
+      height: 40px;
+      box-sizing: border-box;
+      padding: 5px 10px;
+      border-radius: 20px;
+      border: none;
+      background-color: rgba(0,0,0,.1);
+    }
+  }
+  &__saved-cities {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: max-content;
+    .help-item {
+      cursor: pointer;
+      color: blue;
+      padding: 3px 0;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+}
